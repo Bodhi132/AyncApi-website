@@ -1,86 +1,114 @@
 [
   {
-    "title": "Community Meeting",
-    "calLink": "https://www.google.com/calendar/event?eid=M2I4MXRidmpqb2ZyZTUyajhsZm41ZjN0bTggY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
-    "url": "https://github.com/asyncapi/community/issues/979",
-    "banner": "https://user-images.githubusercontent.com/40604284/288050762-4d064212-22ea-4af0-9d1a-b23c8fd70d6b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3ODI2MDUsIm5iZiI6MTcwMTc4MjMwNSwicGF0aCI6Ii80MDYwNDI4NC8yODgwNTA3NjItNGQwNjQyMTItMjJlYS00YWYwLTlkMWEtYjIzYzhmZDcwZDZiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjA1VDEzMTgyNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWYzOGFhZmI5NzAxODljZDQ4NTFhNDc0NGIxNGQzZDZlZmU3ZjhhYTExOGU1YTRkN2FjODU1MzgzZGU0M2UzNmMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.-FT5AFf2Np1cFxMyXVga0zAfLjFc9fspwL-BJ_t7KLg",
-    "date": "2023-12-12T08:00:00.000Z"
-  },
-  {
-    "title": "Overview of AyncAPI v3",
-    "calLink": "https://www.google.com/calendar/event?eid=c3E0Ym1qMTFnMDY5ODljdGk1ajh2anRrdjAgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
-    "url": "https://github.com/asyncapi/community/issues/981",
-    "banner": "https://user-images.githubusercontent.com/40604284/285945520-e06ff77c-0e37-432e-964d-b4d47167cc18.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE3ODI1NzUsIm5iZiI6MTcwMTc4MjI3NSwicGF0aCI6Ii80MDYwNDI4NC8yODU5NDU1MjAtZTA2ZmY3N2MtMGUzNy00MzJlLTk2NGQtYjRkNDcxNjdjYzE4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjA1VDEzMTc1NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWY5MjBhNTEwMjIwNDQxNzczY2EyMDI1YjQzOWIwYzRhY2MxNTU3ZDYyMGY2NzMxYjVkYzYyNmViZTM5Yjg4ZTEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.Dm-WJy2AQO2xUMAJ1nO6ADZuBFYXKj0NEFgdcDd44Fg",
-    "date": "2023-12-19T13:00:00.000Z"
-  },
-  {
-    "title": "3 Request/Reply Use Cases",
-    "calLink": "https://www.google.com/calendar/event?eid=b3NvM2c0dW9tcTk1djRiMDJmbWU4dG9odGcgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
-    "url": "https://github.com/asyncapi/community/issues/985",
-    "banner": "https://user-images.githubusercontent.com/40604284/288488243-e274e624-c5b3-4bff-b0ec-8c1929a24aae.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE4ODI2MTUsIm5iZiI6MTcwMTg4MjMxNSwicGF0aCI6Ii80MDYwNDI4NC8yODg0ODgyNDMtZTI3NGU2MjQtYzViMy00YmZmLWIwZWMtOGMxOTI5YTI0YWFlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjA2VDE3MDUxNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWUyMGYyNDE3Nzg4OGUyZGVmYjNlMDkxYzVkOWFkNjEwYjM4ZDI2YzZjZmUyYjRjMDliMDQ3YWJiNTVlNDI1MmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.jYmY72ZRresQv1lMFeKwA49Wi6VkAozRpIHH4uE0J8g",
-    "date": "2023-12-14T18:00:00.000Z"
-  },
-  {
-    "title": "Quoi de neuf dans AsyncAPI v3 ? Découvrez le en live avec la migration du use-case Adeo",
-    "calLink": "https://www.google.com/calendar/event?eid=Nmk1dm8yZm10dWc0ZXI3MTNtczRhbWkzdTAgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
-    "url": "https://github.com/asyncapi/community/issues/988",
-    "banner": "https://user-images.githubusercontent.com/40604284/289498866-12bffa57-7db8-491f-917e-8e4f8f5b20a7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDIyODk0MDMsIm5iZiI6MTcwMjI4OTEwMywicGF0aCI6Ii80MDYwNDI4NC8yODk0OTg4NjYtMTJiZmZhNTctN2RiOC00OTFmLTkxN2UtOGU0ZjhmNWIyMGE3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjExVDEwMDUwM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA4ZmVlODI0YzY4OTEwMTVkMWMxNzA3MzE5NGNkZDE4N2RmOTIzMWIwMTExNmQ2YzNiNjRhZGMwYWI5YmU2NjImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.4vALVenjnYGjuQYn4FAT5X3yYBJHi8-bKVpGMriehJc",
-    "date": "2023-12-14T10:00:00.000Z"
-  },
-  {
-    "title": "Community Meeting",
-    "calLink": "https://www.google.com/calendar/event?eid=dDhmcGZna2lhZmtpZHJhNW4yZ2NjaTVzNmMgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
-    "url": "https://github.com/asyncapi/community/issues/1016",
-    "banner": "https://user-images.githubusercontent.com/40604284/297103292-e05b8e50-1203-4452-8b2d-0983a48a7925.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDU0MTkwMzksIm5iZiI6MTcwNTQxODczOSwicGF0aCI6Ii80MDYwNDI4NC8yOTcxMDMyOTItZTA1YjhlNTAtMTIwMy00NDUyLThiMmQtMDk4M2E0OGE3OTI1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTE2VDE1MjUzOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFjY2EzYzg2NjNmNTQxOWQxODUxYWMxODlhZWVjNzkwYWRlOWQ5ODkxOTQ4NDhkYWFjNjZjOGU1YTcwMzhhMDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.hs63wNh2t8iH1xayTqIFvprHHa2Z--RfIA9k3q2lD4Y",
-    "date": "2024-01-23T16:00:00.000Z"
-  },
-  {
-    "title": "AsyncAPI v3 retrospective",
-    "calLink": "https://www.google.com/calendar/event?eid=ZnNjNTllMW9ydGIwOHEzZTYxY3NncHRyZzQgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
-    "url": "https://github.com/asyncapi/community/issues/1019",
+    "title": "Marketing WG Meeting,",
+    "calLink": "https://www.google.com/calendar/event?eid=NDVmcGpjM3Y2aGFxMDhhMjMxZGgyNzlkNGsgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
+    "url": "https://github.com/asyncapi/community/issues/1534",
     "banner": "",
-    "date": "2024-02-08T15:00:00.000Z"
-  },
-  {
-    "title": "AACoT'24 Community Meeting",
-    "calLink": "https://www.google.com/calendar/event?eid=YjY3Z3BxdGMzdmRlZmxmNzJpMmQ3MzQwMm8gY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
-    "url": "https://github.com/asyncapi/community/issues/1041",
-    "banner": "https://user-images.githubusercontent.com/66913810/300802575-5ace2c11-9b6d-4904-b22a-5507ee381360.png",
-    "date": "2024-02-07T14:00:00.000Z"
+    "date": "2024-10-08T14:00:00.000Z"
   },
   {
     "title": "Community Meeting",
-    "calLink": "https://www.google.com/calendar/event?eid=YnMwYjNoaDVpamYwdjlpcTkwOXRjcmxqODggY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
-    "url": "https://github.com/asyncapi/community/issues/1042",
-    "banner": "https://github.com/asyncapi/community/assets/40604284/01c2b8de-fa5c-44dd-81a5-70cb96df4813",
-    "date": "2024-02-06T08:00:00.000Z"
+    "calLink": "https://www.google.com/calendar/event?eid=MHRvMzJtb2pxZWs5bDM4a3Jxb2RhYmVhMmMgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
+    "url": "https://github.com/asyncapi/community/issues/1545",
+    "banner": "https://github.com/user-attachments/assets/91fca5af-ae9a-46be-aa44-0f2ef20ce34e",
+    "date": "2024-10-15T08:00:00.000Z"
   },
   {
-    "title": "Community Meeting",
-    "calLink": "https://www.google.com/calendar/event?eid=ZzZ0OG1iNmkyZW5lbnF2bnE5ZnY5ZW9ua28gY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
-    "url": "https://github.com/asyncapi/community/issues/1067",
-    "banner": "https://github.com/asyncapi/community/assets/40604284/897e0278-8da4-41dc-b2b2-b5add9370d6f",
-    "date": "2024-02-20T16:00:00.000Z"
+    "title": "Let's talk about contributing Hacktoberfest Edition",
+    "calLink": "https://www.google.com/calendar/event?eid=Zm9lMzRvM2F2MGljbWplZDJnNWYwczIwMzQgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
+    "url": "https://github.com/asyncapi/community/issues/1549",
+    "banner": "https://github.com/user-attachments/assets/0cd48545-5e26-4240-aa8f-f39306617e94",
+    "date": "2024-10-08T12:00:00.000Z"
   },
   {
-    "title": "Community Meeting",
-    "calLink": "https://www.google.com/calendar/event?eid=dHJ1dGxncm81b3VvZjI0ZjE1MDkxY25lcjggY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
-    "url": "https://github.com/asyncapi/community/issues/1068",
-    "banner": "https://github.com/asyncapi/community/assets/40604284/70eff71e-5de5-4c99-bc89-86a1b9b81e81",
-    "date": "2024-03-05T08:00:00.000Z"
+    "title": "AsyncAPI Mentorship Program FAQ",
+    "calLink": "https://www.google.com/calendar/event?eid=NGlzdDFubzY1YWlwNjhpbm8ycTJzNGU1ZjQgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
+    "url": "https://github.com/asyncapi/community/issues/1550",
+    "banner": "https://github.com/user-attachments/assets/d9e9e2cd-714b-48a8-a40d-03c7683a973c",
+    "date": "2024-10-10T11:00:00.000Z"
   },
   {
-    "title": "Essential building blocks for AsyncAPI",
-    "calLink": "https://www.google.com/calendar/event?eid=dmoyY2ZjNXZ1cDh2cGRiZzFnNG92YzQzZHMgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
-    "url": "https://github.com/asyncapi/community/issues/1084",
+    "title": "Marketing WG Meeting",
+    "calLink": "https://www.google.com/calendar/event?eid=NDd1NzNqdWprNWdqc3U3aGsyZnBhOWpobXMgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
+    "url": "https://github.com/asyncapi/community/issues/1553",
     "banner": "",
-    "date": "2024-03-12T20:00:00.000Z"
+    "date": "2024-10-22T14:00:00.000Z"
   },
   {
-    "title": "AACoT'24 Community Meeting",
-    "calLink": "https://www.google.com/calendar/event?eid=aG9xMzUyam82cDluaDNpY2c2aDBlb25pdDggY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
-    "url": "https://github.com/asyncapi/community/issues/1087",
-    "banner": "https://github.com/asyncapi/community/assets/66913810/43114d9e-ee7f-4479-8714-475d67a374aa",
-    "date": "2024-03-13T14:00:00.000Z"
+    "title": "Marketing WG Meeting",
+    "calLink": "https://www.google.com/calendar/event?eid=MG9qY2RycjY2cm0xMW1ibTVpZGh2MXZuNjQgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
+    "url": "https://github.com/asyncapi/community/issues/1554",
+    "banner": "",
+    "date": "2024-11-05T14:00:00.000Z"
+  },
+  {
+    "title": "Design Meeting",
+    "calLink": "https://www.google.com/calendar/event?eid=ZWptamE1cWRzdGE5Mjlybm9vcGlqYTJkOXMgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
+    "url": "https://github.com/asyncapi/community/issues/1558",
+    "banner": "",
+    "date": "2024-10-17T12:00:00.000Z"
+  },
+  {
+    "title": "AsyncAPI Online Conference 2024 Dry-Run",
+    "calLink": "https://www.google.com/calendar/event?eid=cnY0NDB2Y2dvcm1uZ2V0MmlrdDdyc3ByNTAgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
+    "url": "https://github.com/asyncapi/community/issues/1559",
+    "banner": "",
+    "date": "2024-10-18T16:00:00.000Z"
+  },
+  {
+    "title": "AsyncAPI Online Conference 2024",
+    "calLink": "https://www.google.com/calendar/event?eid=cjZwdnVldDd2Z29zb3Jlcm9pdTBvYzJmMnMgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
+    "url": "https://github.com/asyncapi/community/issues/1562",
+    "banner": "",
+    "date": "2024-10-30T10:00:00.000Z"
+  },
+  {
+    "title": "Conference Dry Run",
+    "calLink": "https://www.google.com/calendar/event?eid=ZmR1c25lZG1wc2swOWloNDd2c2VudWc5OTggY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
+    "url": "https://github.com/asyncapi/community/issues/1566",
+    "banner": "",
+    "date": "2024-10-28T16:00:00.000Z"
+  },
+  {
+    "title": "AsyncAPI + WebSocket: The Collaborative Combo ",
+    "calLink": "https://www.google.com/calendar/event?eid=bGo4aXNjNzg3Ym5tbWRtb2wxZ2ZuMmtxN2sgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
+    "url": "https://github.com/asyncapi/community/issues/1569",
+    "banner": "https://github.com/user-attachments/assets/0cdfc741-e61d-4710-bb0a-af9f7485ff9a",
+    "date": "2024-11-01T13:00:00.000Z"
+  },
+  {
+    "title": "Marketing WG Meeting",
+    "calLink": "https://www.google.com/calendar/event?eid=dHVrZHMyYm9kMzcydmJpYW5qMmdpcWU5MW8gY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
+    "url": "https://github.com/asyncapi/community/issues/1589",
+    "banner": "",
+    "date": "2024-11-19T14:00:00.000Z"
+  },
+  {
+    "title": "Design Call",
+    "calLink": "https://www.google.com/calendar/event?eid=ZmFwNGNoZW5kNzkzcDBsaHM2MW4xdDBzNW8gY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
+    "url": "https://github.com/asyncapi/community/issues/1592",
+    "banner": "",
+    "date": "2024-11-21T12:00:00.000Z"
+  },
+  {
+    "title": "Community Meeting",
+    "calLink": "https://www.google.com/calendar/event?eid=NmQzNTJzbW91NTNscGo4dnJoMWNlM3J2YnMgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
+    "url": "https://github.com/asyncapi/community/issues/1596",
+    "banner": "https://github.com/user-attachments/assets/ff469484-a2c5-4aa2-8652-782f017947fb",
+    "date": "2024-11-26T16:00:00.000Z"
+  },
+  {
+    "title": "AsyncAPI Mentorship Program Kick-Off",
+    "calLink": "https://www.google.com/calendar/event?eid=aGg5cGtwdGV0YmpzbnBlcmdwYjFqMjU1cTQgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
+    "url": "https://github.com/asyncapi/community/issues/1599",
+    "banner": "https://github.com/user-attachments/assets/739381b2-b7de-4e08-b845-04e5a07ba7e0",
+    "date": "2024-12-03T13:00:00.000Z"
+  },
+  {
+    "title": "Marketing WG Meeting",
+    "calLink": "https://www.google.com/calendar/event?eid=a3FvM3ZyOTUwcjJpZm5wOWxzZWcwZ3Bja2sgY19xOXRzZWlnbG9tZHNqNm5qdWh2YnB0czExY0Bn",
+    "url": "https://github.com/asyncapi/community/issues/1616",
+    "banner": "",
+    "date": "2024-12-17T14:00:00.000Z"
   }
 ]

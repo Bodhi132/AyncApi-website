@@ -1,32 +1,32 @@
 [
   {
-    "image_url": "https://i.ytimg.com/vi/FXgpzqtggYo/hqdefault.jpg",
-    "title": "AACoT&#39;24 Community Meeting, March 13th 2024",
-    "description": "https://github.com/asyncapi/community/issues/1087.",
-    "videoId": "FXgpzqtggYo"
+    "image_url": "https://i.ytimg.com/vi/5hY8yi6DXyE/hqdefault.jpg",
+    "title": "Marketing WG Meeting, 14:00 UTC Tuesday December 17th 2024",
+    "description": "Welcoming the 2024 cohort of the AsyncAPI mentorship program.",
+    "videoId": "5hY8yi6DXyE"
   },
   {
-    "image_url": "https://i.ytimg.com/vi/fic5PKFGG28/hqdefault.jpg",
-    "title": "Essential building blocks for AsyncAPI (12th of March, 2024)",
-    "description": "https://github.com/asyncapi/community/issues/1084.",
-    "videoId": "fic5PKFGG28"
+    "image_url": "https://i.ytimg.com/vi/QWRcCvDmf04/hqdefault.jpg",
+    "title": "AsyncAPI Mentorship Program 2024 Cohort Kick-off",
+    "description": "Welcoming the 2024 cohort of the AsyncAPI mentorship program.",
+    "videoId": "QWRcCvDmf04"
   },
   {
-    "image_url": "https://i.ytimg.com/vi/4t4nAmDekDA/hqdefault.jpg",
-    "title": "AACoT&#39;24 Community Meeting, Wednesday February 7th 2024",
-    "description": "https://github.com/asyncapi/community/issues/1041.",
-    "videoId": "4t4nAmDekDA"
-  },
-  {
-    "image_url": "https://i.ytimg.com/vi/8xiLLyIpFpw/hqdefault.jpg",
-    "title": "Community Meeting, February 6th 2024",
-    "description": "https://github.com/asyncapi/community/issues/1042.",
-    "videoId": "8xiLLyIpFpw"
-  },
-  {
-    "image_url": "https://i.ytimg.com/vi/cb7lrq5hxuE/hqdefault.jpg",
-    "title": "Community Meeting, January 23rd 2024",
+    "image_url": "https://i.ytimg.com/vi/XirMXiBNaBM/hqdefault.jpg",
+    "title": "Community Meeting, 16:00 UTC Tuesday November 26th 2024",
     "description": "",
-    "videoId": "cb7lrq5hxuE"
+    "videoId": "XirMXiBNaBM"
+  },
+  {
+    "image_url": "https://i.ytimg.com/vi/Q2cvxsUUgzA/hqdefault.jpg",
+    "title": "AsyncAPI-Powered Event Feeds: 3 Steps to Streaming",
+    "description": "In this livestream, we'll dive into the challenges and benefits of using AsyncAPI for building event-driven architectures.",
+    "videoId": "Q2cvxsUUgzA"
+  },
+  {
+    "image_url": "https://i.ytimg.com/vi/9MaHh4b-rmc/hqdefault.jpg",
+    "title": "Broadening the API Landscape: AsyncAPI and CloudEvents in the Enterprise -  Daniel Kocot",
+    "description": "",
+    "videoId": "9MaHh4b-rmc"
   }
 ]

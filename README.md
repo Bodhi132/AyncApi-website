@@ -27,14 +27,15 @@ This repository contains the sources of AsyncAPI website:
 
 - It's powered by [Next.js](https://nextjs.org/),
 - It uses [Tailwind](https://tailwindcss.com/) CSS framework,
-- It's build and deployed with [Netlify](https://www.netlify.com/).
+- It's build and deployed with [Netlify](https://www.netlify.com/),
+- It uses [Storybook](https://storybook.js.org/) as a frontend workshop and for documenting UI components.
 
 ## Requirements
 
 Use the following tools to set up the project:
 
-- [Node.js](https://nodejs.org/) v16.0.0+
-- [npm](https://www.npmjs.com/) v8.10.0+
+- [Node.js](https://nodejs.org/) v20.12.0+
+- [npm](https://www.npmjs.com/) v10.5.0+
 
 ## Run locally
 
@@ -69,6 +70,14 @@ Use the following tools to set up the project:
 
 7. Access the live development server at [localhost:3000](http://localhost:3000).
 
+8. To run the storybook locally:
+
+```bash
+    npm run dev:storybook
+```
+
+9. Access the live storybook development server at [localhost:6006](http://localhost:6006).
+
 
 ## Compose new blog post
 
@@ -88,13 +97,21 @@ To spin up a Gitpod codespace, go to http://gitpod.io/#https://github.com/asynca
 
 ### Build
 
-To build a production-ready website, run the following command:
+1. To build a production-ready website, run the following command:
 
 ```bash
 npm run build
 ```
 
 Generated files of the website go to the `.next` folder.
+
+2. To build the production-ready storybook, run the following command:
+
+```bash
+npm run build:storybook
+```
+
+Generated files of the storybook go to the `storybook-static` folder.
 
 ### Run locally using Docker
 
@@ -108,7 +125,7 @@ After cloning repository to your local, perform the following steps from the roo
 #### Steps:
 1. Build the Docker image:
     ```bash 
-    docker build -t asyncapi-website .`
+    docker build -t asyncapi-website .
     ```
 2. Start the container:
     ```bash
@@ -116,6 +133,57 @@ After cloning repository to your local, perform the following steps from the roo
     ```
 
 Now you're running AsyncAPI website in a development mode. Container is mapped with your local copy of the website. Whenever you make changes to the code, the website will refresh and changes visible in localhost:3000.
+
+## Use shared Markdown fragments
+
+To minimize the duplication of content and make it easier to maintain, there are shared fragments you can use when working with Markdown files. These fragments are stored in the `/assets/docs/fragments` directory.
+
+To include a fragment in a Markdown file:
+
+1. Import the fragment at the top of the file (but below the frontmatter) using the following syntax:
+
+    ```md
+    import DesiredFragmentName from '@/assets/docs/fragments/fragmentYouWantToImport.md';
+    ```
+
+1. Add the imported fragment to the desired location in the Markdown file using the following syntax:
+
+    ```md
+    <DesiredFragmentName />
+    ```
+
+## Lint the code
+To lint the code, run the following command:
+```
+npm run lint
+```
+
+To fix the linting issues, run the following command:
+```
+npm run lint:fix
+```
+
+To lint the mdx files, run the following command:
+```
+npm run lint:mdx
+```
+
+## Start the production server
+To build and run a production-ready website, run the following command:
+```
+npm run build && npm run start
+```
+Generated files of the website go in the `.next` folder.
+
+## Start the netlify production server
+Start a local development server for the build tool using the configuration and environment variables set for local development with the Netlify CLI:
+```
+netlify dev
+```
+To start the server using the configuration and environment variables set for `dev` or `all` deploy contexts, run the following command:
+```
+netlify dev --context production
+```
 
 ## Updating information about project finance
 
@@ -196,24 +264,34 @@ This repository has the following structure:
 <!-- If you make any changes in the project structure, remember to update it. -->
 
 ```text
-  ├── .github                     # Definitions of GitHub workflows, pull request and issue templates
-  ├── components                  # Various generic components such as "Button", "Figure", etc.
-  ├── config                      # Transformed static data to display on the pages such as blog posts etc.
-  ├── context                     # Various React's contexts used in website
-  ├── css                         # Various CSS files
-  ├── lib                         # Various JS code for preparing static data to render in pages
-  ├── pages                       # Website's pages source. It includes raw markdown files and React page templates.
-  │    ├── about                  # Raw blog for /about page
-  │    ├── blog                   # Blog posts
-  │    ├── docs                   # Blog for /docs/* pages
-  │    └── tools                  # Various pages to describe tools
-  ├── public                      # Data for site metadata and static blog such as images
-  ├── scripts                     # Scripts used in the build and dev processes
-  ├── next.config.js              # Next.js configuration file
-  ├── netlify                     # Code that runs on Netlify
-  │    ├── edge-functions         # Netlify Edge-Functions code
-  ├── postcss.config.js           # PostCSS configuration file
-  └── tailwind.config.js          # TailwindCSS configuration file
+  ├── .github                                  # Definitions of GitHub workflows, pull request and issue templates
+  ├── assets                                   # Various assets
+  |    ├── docs                                # Documentation assets
+  |        | fragments                         # Documentations for CLI installation and contribution.
+  ├── components                               # Various generic components such as "Button", "Figure", etc.
+  ├── config                                   # Transformed static data to display on the pages such as blog posts etc.
+  ├── context                                  # Various React's contexts used in website
+  ├── locales                                  # Translations for the website
+  ├── markdown                                 # Markdown files for the website
+       ├── about                               # Markdown files for the /about page
+       ├── blog                                # Markdown files for the blog posts
+       ├── docs                                # Markdown files for the /docs/* pages
+  ├── netlify                                  # Contains Netlify serverless functions to run on Netlify
+  ├── pages                                    # Website's pages source. It includes raw markdown files and React page templates.
+  │    ├── about                               # Raw blog for /about page
+  │    ├── blog                                # Blog posts
+  │    ├── docs                                # Blog for /docs/* pages
+  │    └── tools                               # Various pages to describe tools
+  ├── public                                   # Data for site metadata and static blog such as images
+  ├── scripts                                  # Scripts used in the build and dev processes
+  ├── styles                                   # Various CSS files
+  ├── templates                                # Various template markdown files
+  ├── types                                    #  Various typeScript types used in the website
+  ├── utils                                    # Various JS code for preparing static data to render in pages
+  ├── next.config.mjs                          # Next.js configuration file
+  ├── README.md                                # Project's README file
+  ├── tailwind.config.js                       # TailwindCSS configuration file
+  └── tsconfig.json                            # TypeScript configuration file
 ```
 
 ## Connect with AsyncAPI Community
@@ -236,6 +314,15 @@ This repository has the following structure:
 </a>
 </p>
 
+## License
+
+This project's source code is licensed under the Apache License, Version 2.0. A copy of the
+license is available in LICENSE file.
+
+This project's documentation is licensed under the Creative Commons Attribution
+4.0 International License (CC-BY-4.0). A copy of the license is available in
+LICENSE-docs.
+
 ## AsyncAPI Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -249,7 +336,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="http://www.fmvilas.com/"><img src="https://avatars.githubusercontent.com/u/242119?v=4?s=100" width="100px;" alt="Fran Méndez"/><br /><sub><b>Fran Méndez</b></sub></a><br /><a href="https://github.com/asyncapi/website/commits?author=fmvilas" title="Code">💻</a> <a href="https://github.com/asyncapi/website/commits?author=fmvilas" title="Documentation">📖</a> <a href="https://github.com/asyncapi/website/issues?q=author%3Afmvilas" title="Bug reports">🐛</a> <a href="#design-fmvilas" title="Design">🎨</a> <a href="#maintenance-fmvilas" title="Maintenance">🚧</a> <a href="#infra-fmvilas" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#ideas-fmvilas" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/asyncapi/website/pulls?q=is%3Apr+reviewed-by%3Afmvilas" title="Reviewed Pull Requests">👀</a> <a href="#blog-fmvilas" title="Blogposts">📝</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://dev.to/derberg"><img src="https://avatars.githubusercontent.com/u/6995927?v=4?s=100" width="100px;" alt="Lukasz Gornicki"/><br /><sub><b>Lukasz Gornicki</b></sub></a><br /><a href="https://github.com/asyncapi/website/commits?author=derberg" title="Code">💻</a> <a href="https://github.com/asyncapi/website/commits?author=derberg" title="Documentation">📖</a> <a href="https://github.com/asyncapi/website/issues?q=author%3Aderberg" title="Bug reports">🐛</a> <a href="#design-derberg" title="Design">🎨</a> <a href="#maintenance-derberg" title="Maintenance">🚧</a> <a href="#infra-derberg" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#ideas-derberg" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/asyncapi/website/pulls?q=is%3Apr+reviewed-by%3Aderberg" title="Reviewed Pull Requests">👀</a> <a href="#blog-derberg" title="Blogposts">📝</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/magicmatatjahu"><img src="https://avatars.githubusercontent.com/u/20404945?v=4?s=100" width="100px;" alt="Maciej Urbańczyk"/><br /><sub><b>Maciej Urbańczyk</b></sub></a><br /><a href="https://github.com/asyncapi/website/commits?author=magicmatatjahu" title="Code">💻</a> <a href="https://github.com/asyncapi/website/commits?author=magicmatatjahu" title="Documentation">📖</a> <a href="https://github.com/asyncapi/website/issues?q=author%3Amagicmatatjahu" title="Bug reports">🐛</a> <a href="#design-magicmatatjahu" title="Design">🎨</a> <a href="#maintenance-magicmatatjahu" title="Maintenance">🚧</a> <a href="#infra-magicmatatjahu" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#ideas-magicmatatjahu" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/asyncapi/website/pulls?q=is%3Apr+reviewed-by%3Amagicmatatjahu" title="Reviewed Pull Requests">👀</a> <a href="#blog-magicmatatjahu" title="Blogposts">📝</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/alequetzalli"><img src="https://avatars.githubusercontent.com/u/19964402?v=4?s=100" width="100px;" alt="Alejandra Quetzalli "/><br /><sub><b>Alejandra Quetzalli </b></sub></a><br /><a href="https://github.com/asyncapi/website/commits?author=alequetzalli" title="Documentation">📖</a> <a href="https://github.com/asyncapi/website/pulls?q=is%3Apr+reviewed-by%3Aalequetzalli" title="Reviewed Pull Requests">👀</a> <a href="#talk-alequetzalli" title="Talks">📢</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/quetzalliwrites"><img src="https://avatars.githubusercontent.com/u/19964402?v=4?s=100" width="100px;" alt="Quetzalli Writes "/><br /><sub><b>Quetzalli Writes</b></sub></a><br /><a href="https://github.com/asyncapi/website/commits?author=quetzalliwrites" title="Documentation">📖</a> <a href="https://github.com/asyncapi/website/pulls?q=is%3Apr+reviewed-by%3Aquetzalliwrites" title="Reviewed Pull Requests">👀</a> <a href="#talk-quetzalliwrites" title="Talks">📢</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://aayushmau5.github.io/"><img src="https://avatars.githubusercontent.com/u/54525741?v=4?s=100" width="100px;" alt="Aayush Kumar Sahu"/><br /><sub><b>Aayush Kumar Sahu</b></sub></a><br /><a href="https://github.com/asyncapi/website/commits?author=aayushmau5" title="Code">💻</a> <a href="https://github.com/asyncapi/website/issues?q=author%3Aaayushmau5" title="Bug reports">🐛</a> <a href="#design-aayushmau5" title="Design">🎨</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://boyney.io/"><img src="https://avatars.githubusercontent.com/u/3268013?v=4?s=100" width="100px;" alt="David Boyne"/><br /><sub><b>David Boyne</b></sub></a><br /><a href="https://github.com/asyncapi/website/commits?author=boyney123" title="Code">💻</a> <a href="#design-boyney123" title="Design">🎨</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/jessemenning"><img src="https://avatars.githubusercontent.com/u/62108913?v=4?s=100" width="100px;" alt="Jesse Menning"/><br /><sub><b>Jesse Menning</b></sub></a><br /><a href="#blog-jessemenning" title="Blogposts">📝</a></td>
@@ -316,6 +403,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://web-yuvrxj-afk.vercel.app/"><img src="https://avatars.githubusercontent.com/u/63532070?v=4?s=100" width="100px;" alt="Yuvraj Singh Sisodiya"/><br /><sub><b>Yuvraj Singh Sisodiya</b></sub></a><br /><a href="https://github.com/asyncapi/website/commits?author=yuvrxj-afk" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Shiva953"><img src="https://avatars.githubusercontent.com/u/120790871?v=4?s=100" width="100px;" alt="Neutron"/><br /><sub><b>Neutron</b></sub></a><br /><a href="https://github.com/asyncapi/website/commits?author=Shiva953" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/sagarkori143"><img src="https://avatars.githubusercontent.com/u/129517558?v=4?s=100" width="100px;" alt="Sagar Kori"/><br /><sub><b>Sagar Kori</b></sub></a><br /><a href="https://github.com/asyncapi/website/commits?author=sagarkori143" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/raj17ce"><img src="https://avatars.githubusercontent.com/u/116947399?v=4?s=100" width="100px;" alt="Raj Patel"/><br /><sub><b>Raj Patel</b></sub></a><br /><a href="https://github.com/asyncapi/website/commits?author=raj17ce" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
